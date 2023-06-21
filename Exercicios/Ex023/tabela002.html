@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        table {
+            border: 3px solid black;
+            border-collapse: collapse;
+            width: 500px;
+        }
+        caption {
+            border: 3px solid black;
+            padding: 10px;
+            font-size: 1.5em;
+            font-weight: bold;
+            background-color: gray;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        thead, tfoot {
+            background-color: gray;
+            color: white;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: lightgrey;
+        }
+    </style>
+</head>
+<body>
+    <h1>População das regiões brasileiras</h1>
+    <table>
+        <caption>População das regiões brasileiras</caption>
+        <thead>
+            <tr>
+                <th scope="col">Região</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Região Sudeste</td>
+                <td>87 481 631</td>
+            </tr>
+            <tr>
+                <td>Região Nordeste</td>
+                <td>55 389 382</td>
+            </tr>
+            <tr>
+                <td>Região Sul</td>
+                <td>30 685 598</td>
+            </tr>
+            <tr>
+                <td>Região Norte</td>
+                <td>17 834 762</td>
+            </tr>
+            <tr>
+                <td>Região Centro-Oeste</td>
+                <td>16 492 326</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total</th>
+                <td><strong>207.800.000</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
