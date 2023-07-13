@@ -19,6 +19,13 @@
                 <input type="email" name="email" id="iemail" autocomplete="email" required>
             </p>
             <p>
+                <input type="radio" name="sexo" id="imas" value="M"><label for="imas">Masculino</label>
+                <input type="radio" name="sexo" id="ifem" value="F"><label for="ifem">Feminino</label>
+            </p>
+            <p>
+                <input type="checkbox" name="cota" id="icota"><label for="icota">Cotista?</label>
+            </p>
+            <p>
                 <label for="itel">Telefone</label>
                 <input type="tel" name="tel" id="itel" autocomplete="tel" pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required placeholder="(xx)xxxx-xxxx">
             </p>
@@ -37,6 +44,18 @@
             <p>
                 <label for="ihora">Horario da Prova</label>
                 <input type="time" name="hora" id="ihora">
+            </p>
+            <p>
+                <label for="icor">Cor:</label>
+                <input type="color" name="cor" id="icor">
+            </p>
+            <p>
+                <label for="inivel">Nível:</label>
+                <input type="range" name="nivel" id="inivel">
+            </p>
+            <p>
+                <label for="ifoto">Foto</label>
+                <input type="file" name="file" id="ifile">
             </p>
             <p>
                 <input type="submit" value="Enviar">
